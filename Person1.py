@@ -41,7 +41,7 @@ class MyPerson:
     def going_IN(self,mid_start,mid_end):
         if len(self.tracks) >= 2:
             if self.state == '0':
-                if self.tracks[-1][1] < mid_end and self.tracks[-2][1] >= mid_end: #cruzo la linea
+                if self.tracks[-1][1] < mid_end and self.tracks[-2][1] >= mid_end:
                     state = '1'
                     self.dir = 'in'
                     return True
@@ -52,7 +52,7 @@ class MyPerson:
     def going_OUT(self,mid_start,mid_end):
         if len(self.tracks) >= 2:
             if self.state == '0':
-                if self.tracks[-1][1] > mid_start and self.tracks[-2][1] <= mid_start: #cruzo la linea
+                if self.tracks[-1][1] > mid_start and self.tracks[-2][1] <= mid_start:
                     state = '1'
                     self.dir = 'out'
                     return True
